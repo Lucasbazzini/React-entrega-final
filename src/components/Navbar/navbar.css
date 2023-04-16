@@ -1,0 +1,37 @@
+.container{
+    background-color: rgb(31, 44, 141);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px;
+    
+    list-style: none;
+}
+
+.ul li{
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 23px;
+    color: rgb(226, 226, 226);
+    transition: 250ms all ease-in-out;
+}
+
+.ul li:hover{
+    color: rgb(141, 141, 141);
+}
+
+.ul a{
+    color: white;
+    transition: 250ms all ease-in-out;
+}
+
+.ul a:hover{
+    color: rgb(141, 141, 141);
+}
