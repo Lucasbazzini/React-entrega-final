@@ -3,7 +3,7 @@ import './contador.css'
 
 const ItemCount = ({initial , stock , onAdd}) => {
 
-  const [count, setCount] = useState(parseInt,{initial});
+  const [count, setCount] = useState(parseInt(initial));
 
   const decrementar = () => {
     setCount(count - 1);
@@ -12,7 +12,6 @@ const ItemCount = ({initial , stock , onAdd}) => {
   const incrementar = () => {
     setCount(count + 1);
   }
-
 
   useEffect(() => {
     setCount(parseInt(initial));

@@ -1,0 +1,20 @@
+.container-item{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    transition: all 400ms ease-in-out;
+   
+}
+.container-item:hover{
+    color: rgb(40, 40, 40);
+
+}
+.imagen-item{
+    width: 400px;
+    height: 400px;
+}
