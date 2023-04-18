@@ -11,9 +11,8 @@ function App() {
 
   return (
     <div className="App">
-
+      <CartProvider>
       <BrowserRouter>
-        <CartProvider>
           <NavBar />
           <Routes>
             <Route path="/" element={<ItemListContainer texto='Venta de hardware para gaming!' />} />
@@ -21,8 +20,8 @@ function App() {
             <Route path="/detail/:detailid" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
-        </CartProvider>
       </BrowserRouter>
+      </CartProvider>
     </div>
   )
 }

@@ -14,8 +14,14 @@ const CartProvider = ({ children }) => {
     setCart([...newCart, {...item, quantity: quantity + newQuantity}])
   }
 
-  console.log('carrito' , cart);
 
+  const totalPrice = () => {
+    return cart.reduce((prev, act) => prev + act.quantity * act.price, 0)
+  }
+
+  const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity, 0)
+
+  
   // FUNCION LIMPIAR CARRITO DE COMPRAS
   const limpiarCarrito = () => setCart([])
 
@@ -32,7 +38,10 @@ const CartProvider = ({ children }) => {
       limpiarCarrito,
       dentroCarrito,
       quitarProcucto,
-      addProduct
+      addProduct,
+      totalPrice,
+      totalProducts,
+      cart
     }}>
       {children}
     </CartContext.Provider>
