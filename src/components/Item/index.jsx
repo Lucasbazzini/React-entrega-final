@@ -1,10 +1,7 @@
 import './item.css'
 import { Link } from 'react-router-dom'
-import { useCartContext } from '../../context/CartContext'
 
 const Item = ({ info }) => {
-
-
 
   return (
     <Link to={`/detail/${info.id}`} className='container-item'>

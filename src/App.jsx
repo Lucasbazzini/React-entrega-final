@@ -10,7 +10,7 @@ import CartProvider from "./context/CartContext"
 function App() {
 
   return (
-    <div className="App">
+    <>
       <CartProvider>
       <BrowserRouter>
           <NavBar />
@@ -22,7 +22,7 @@ function App() {
           </Routes>
       </BrowserRouter>
       </CartProvider>
-    </div>
+    </>
   )
 }
 
