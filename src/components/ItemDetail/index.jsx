@@ -1,15 +1,18 @@
 import './detail.css'
 import ItemCount from '../ItemCount'
+import { useCartContext } from '../../context/CartContext';
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 const ItemDetail = ({ data }) => {
 
   const [carrito, setCarrito] = useState(false);
+  const {addProduct} = useCartContext();
 
 
   const onAdd = (quantity) =>{
     setCarrito(true)
+    addProduct(data, quantity)
   }
   return (
     <div className='container-principal'>
