@@ -22,7 +22,7 @@ const ItemDetail = ({ data }) => {
         </div>
         <div className='container-text'>
           <h1 className='title-detail'>{data.title}</h1>
-          <p className='text-detail'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error, laboriosam totam earum inventore id tenetur quidem nisi! Commodi quisquam est illum eveniet assumenda aspernatur facere pariatur molestias dolore temporibus?</p>
+          <p className='text-detail'>{data.descripcion}</p>
           {
             carrito ? <Link className='finalizar' to='/cart'>Finalizar compra</Link>  : <ItemCount initial={1} stock={5} onAdd={onAdd}/>
           }

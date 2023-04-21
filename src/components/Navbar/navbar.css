@@ -35,3 +35,7 @@
 .ul a:hover{
     color: rgb(141, 141, 141);
 }
+
+.link-nav{
+    text-decoration: none;
+}

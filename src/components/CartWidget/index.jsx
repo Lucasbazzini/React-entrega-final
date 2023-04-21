@@ -3,11 +3,11 @@ import './cart.css'
 
 const CartWidget = () => {
  
-
+  const {totalProducts} = useCartContext()
   return (
     <div className='container-cart'>
         <i className="bi bi-cart3"></i>
-        {/* <span>{totalProducts() || ""}</span> */}
+         <span className='span-cart'>{totalProducts() || ""}</span> 
     </div>
   )
 }

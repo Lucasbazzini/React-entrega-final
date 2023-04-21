@@ -1,5 +1,6 @@
 .container-item{
     color: white;
+    color: rgb(40, 40, 40);
     font-size: 25px;
     text-decoration: none;
     display: flex;
@@ -8,12 +9,10 @@
     flex-direction: column;
     padding: 40px;
     transition: all 400ms ease-in-out;
+    width: 33%;
    
 }
-.container-item:hover{
-    color: rgb(40, 40, 40);
 
-}
 .imagen-item{
     width: 400px;
     height: 400px;

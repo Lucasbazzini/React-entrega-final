@@ -1,0 +1,35 @@
+.totalPrice{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.containerMasCompras{
+   height: 87.9vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.buttonMasCompras{
+    border-radius: 5px;
+    padding: 25px 40px;
+    background-color: rgb(31,44,141);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 250ms ease-in-out;
+}
+
+.buttonMasCompras:hover{
+    background-color: rgb(12, 38, 234);
+}
+
+.containerMasCompras p{
+    color: rgb(66, 66, 66);
+    font-size: 35px;
+}
