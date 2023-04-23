@@ -18,6 +18,8 @@
 }
 
 .img{
+    object-fit: contain;
+    width: 700px;
     height: 600px;
     border-radius: 10px;
 }

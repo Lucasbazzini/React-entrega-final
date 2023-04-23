@@ -1,5 +1,4 @@
-.container-item{
-    color: white;
+.container-item {
     color: rgb(40, 40, 40);
     font-size: 25px;
     text-decoration: none;
@@ -7,13 +6,26 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 40px;
+    padding: 42px;
     transition: all 400ms ease-in-out;
-    width: 33%;
-   
+    width: 20%;
+    margin: 16px 130px;
+    background-color: #bbbbbb;
+    border-radius: 5px;
+    box-shadow: 18px 15px 15px -3px rgb(0 0 0 / 10%);
+}
+.container-item:hover{
+    background-color: #555555;
+    color:rgb(255, 255, 255);
+    box-shadow: 0px 0px 22px -6px rgba(0,0,0,1);
 }
 
-.imagen-item{
+.imagen-item {
     width: 400px;
     height: 400px;
+    border-radius: 5px;
+    transition: all 250ms ease-in-out;
+}
+.imagen-item:hover{
+transform: scale(1.02);
 }
